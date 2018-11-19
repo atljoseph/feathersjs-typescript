@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "noEmitHelpers": true,
+        "strictNullChecks": true
+    },
+    "include": [
+        "src/*",
+        "src/**/*",
+        "test/"
+    ],
+    "exclude": [
+        "node_modules/**"
+    ]
+}

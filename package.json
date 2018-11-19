@@ -1,0 +1,60 @@
+{
+  "name": "feathers-typescript-joseph",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && NODE_ENV= npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "compile": "rm -rf dist && tsc -outDir dist",
+    "start": "npm run compile && node dist/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.4",
+    "@feathersjs/errors": "^3.3.4",
+    "@feathersjs/express": "^1.2.7",
+    "@feathersjs/feathers": "^3.2.3",
+    "@feathersjs/socketio": "^3.2.7",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "feathers-memory": "^2.2.0",
+    "helmet": "^3.15.0",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/compression": "0.0.36",
+    "@types/cors": "^2.8.4",
+    "@types/helmet": "0.0.42",
+    "@types/node": "^10.12.9",
+    "@types/socket.io": "^2.1.0",
+    "@types/winston": "^2.4.4",
+    "eslint": "^5.9.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.6",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
+  }
+}
